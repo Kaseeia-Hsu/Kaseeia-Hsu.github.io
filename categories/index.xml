@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on Kaseeia(Ziqun Hsu)</title>
+        <link>https://kaseeia-hsu.github.io/categories/</link>
+        <description>Recent content in Categories on Kaseeia(Ziqun Hsu)</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 29 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kaseeia-hsu.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>study</title>
+        <link>https://kaseeia-hsu.github.io/categories/study/</link>
+        <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://kaseeia-hsu.github.io/categories/study/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>spain</title>
+        <link>https://kaseeia-hsu.github.io/categories/spain/</link>
+        <pubDate>Wed, 17 Aug 2022 02:04:41 +0800</pubDate>
+        
+        <guid>https://kaseeia-hsu.github.io/categories/spain/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>workshop</title>
+        <link>https://kaseeia-hsu.github.io/categories/workshop/</link>
+        <pubDate>Wed, 17 Aug 2022 02:04:41 +0800</pubDate>
+        
+        <guid>https://kaseeia-hsu.github.io/categories/workshop/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>projects</title>
+        <link>https://kaseeia-hsu.github.io/categories/projects/</link>
+        <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://kaseeia-hsu.github.io/categories/projects/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>syntax</title>
+        <link>https://kaseeia-hsu.github.io/categories/syntax/</link>
+        <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://kaseeia-hsu.github.io/categories/syntax/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>themes</title>
+        <link>https://kaseeia-hsu.github.io/categories/themes/</link>
+        <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://kaseeia-hsu.github.io/categories/themes/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

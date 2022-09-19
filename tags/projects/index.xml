@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>projects on Kaseeia(Ziqun Hsu)</title>
+        <link>https://kaseeia-hsu.github.io/tags/projects/</link>
+        <description>Recent content in projects on Kaseeia(Ziqun Hsu)</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 16 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kaseeia-hsu.github.io/tags/projects/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Project_Fantastic Uniform Customized Keyboard</title>
+        <link>https://kaseeia-hsu.github.io/p/project_fantastic-uniform-customized-keyboard/</link>
+        <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://kaseeia-hsu.github.io/p/project_fantastic-uniform-customized-keyboard/</guid>
+        <description>&lt;img src="https://i.imgur.com/3rnQ51M.png" alt="Featured image of post Project_Fantastic Uniform Customized Keyboard" /&gt;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=mGShD9ZER1c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/watch?v=mGShD9ZER1c&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=p04L52h32lY&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/watch?v=p04L52h32lY&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/peng-zhihui/HelloWord-Keyboard&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/peng-zhihui/HelloWord-Keyboard&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.zfrontier.com/app/mch/lW7mRRxN26Ml&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.zfrontier.com/app/mch/lW7mRRxN26Ml&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;殼 (塑膠, 鋁合金)&lt;/li&gt;
+&lt;li&gt;PCB (VENDOR:JLCPCB(CN),JLCPCB)&lt;/li&gt;
+&lt;li&gt;MCU (STM32,HT32,RP2040 )&lt;/li&gt;
+&lt;li&gt;EC (Type C)&lt;/li&gt;
+&lt;li&gt;鍵盤軸&lt;/li&gt;
+&lt;li&gt;鍵帽&lt;/li&gt;
+&lt;li&gt;(OPTIONAL)Flash [MX25Q128]&lt;/li&gt;
+&lt;li&gt;(OPTIONAL)Bluetooth RF asic(ESP32[80],C2540[60],BEKEN32xx[40])&lt;/li&gt;
+&lt;li&gt;ARGB (WS2812,WS2812B)&lt;/li&gt;
+&lt;li&gt;PWR PART-A PD&lt;/li&gt;
+&lt;li&gt;PWR PART-B MAIN 3.3V&lt;/li&gt;
+&lt;li&gt;(OPTIONAL)BRUSHLESS MOTOR INPUT&lt;/li&gt;
+&lt;li&gt;ws2812 * 25&lt;/li&gt;
+&lt;li&gt;熱插拔底座&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;known-issues&#34;&gt;Known Issues&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Power&lt;/li&gt;
+&lt;li&gt;Temperature&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;operating-principles&#34;&gt;Operating principles&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Key Press -&amp;gt; Pulse&lt;/li&gt;
+&lt;li&gt;Pulse -&amp;gt; Controller&lt;/li&gt;
+&lt;li&gt;Controller -&amp;gt; Type C(USB 2)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;feature&#34;&gt;Feature&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Bluetooth&lt;/li&gt;
+&lt;li&gt;Macro&lt;/li&gt;
+&lt;li&gt;指紋&lt;/li&gt;
+&lt;li&gt;ARGB (open rgb)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;considerations&#34;&gt;Considerations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows, MAC ?&lt;/li&gt;
+&lt;li&gt;插拔 or Not ?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;interface-between-modules&#34;&gt;Interface between Modules&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;USB&lt;/li&gt;
+&lt;li&gt;PogoPin&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;numpad&#34;&gt;Numpad&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Standalone has no ARGB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;pictures&#34;&gt;Pictures&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://kaseeia-hsu.github.io/p/project_fantastic-uniform-customized-keyboard/pcb.jpg&#34;
+	width=&#34;833&#34;
+	height=&#34;612&#34;
+	srcset=&#34;https://kaseeia-hsu.github.io/p/project_fantastic-uniform-customized-keyboard/pcb_hu1322bcff5cf1ca4574786ac9e5177b71_107171_480x0_resize_q75_box.jpg 480w, https://kaseeia-hsu.github.io/p/project_fantastic-uniform-customized-keyboard/pcb_hu1322bcff5cf1ca4574786ac9e5177b71_107171_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Circuit Diagram of PCB&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;136&#34;
+		data-flex-basis=&#34;326px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
