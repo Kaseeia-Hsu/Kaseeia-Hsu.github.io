@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="">
+
+    
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap" rel="stylesheet" media="print" type="text/css" onload="this.media='all'">
+    
+
+    <title>
+      
+      
+          
+      
+    </title>
+    <link rel="canonical" href="https://kaseeia-hsu.github.io/post/latin2/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify { float: left; }
+  .right-justify { float:right; }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:bolder;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:left;
+    padding:80px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:30px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, .date {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content .date {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(1) {
+    margin-right:0.5em;;
+  }
+
+  #links :nth-child(2) {
+    margin-left:0.5em;;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    *, #nav h1 a {
+      color: #FDFDFD;
+    }
+
+    body {
+      background: #121212;
+    }
+
+    pre, code {
+      background-color: #262626;
+    }
+
+    #sub-header, .date {
+      color: #BABABA;
+    }
+
+    hr {
+      background: #EBEBEB;
+    }
+  }
+</style>
+
+
+    </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="https://kaseeia-hsu.github.io/">Kaseeia&#39;s Blog</a></h1>
+      <ul>
+        
+          <li><a href="https://mail.google.com/mail/u/0/?source=mailto&amp;to=kaseeia_hsu@ieee.org&amp;fs=1&amp;tf=cm">Contact</a></li>
+        
+          <li><a href="https://github.com/Kaseeia-Hsu/Kaseeia-Hsu.github.io">Github</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1>  </h1>
+
+  
+
+  <div class="entry-content">
+    <p>title = &ldquo;Grammatica Latina 0.2&rdquo;
+description = &quot;&quot;
+tags = [
+&ldquo;Languages&rdquo;,
+&ldquo;Latin&rdquo;,
+]
+date = &ldquo;2023-08-01&rdquo;
+categories = [
+&ldquo;Learning&rdquo;,
+]</p>
+<p>+++</p>
+<h2 id="20cases">2.0	Cases</h2>
+<p>We’ve mentioned the concept of “cases” in Latin last time, and in this chapter, we’ll have a close look into all these different cases, and also, in this chapter, we’ll read some paragraphs in Latin together for the first time! So, without further ado, let’s get into the topic.</p>
+<ul>
+<li>Nominative: Nominative is the case for <strong>subject</strong>.
+<ul>
+<li><strong>Ego</strong> manduco carnem. -&gt; “Ego” is the subject here.</li>
+<li><strong>Caro</strong> manducata est a me. -&gt; “Caro” is the subject here.</li>
+<li>We can also use the auxilary verb <strong>“esse(to be)”</strong> to construct a nominal predicate, such as <strong>“Italia paeninsula est. (Italy is a peninsula.)”</strong> or <strong>“Puella puchra est. (The girl is beautiful.)”</strong></li>
+</ul>
+</li>
+<li>Genitive: Genitive is a case which is used to indicate <strong>possession.</strong> It’s usually used with nouns and pronouns. The concept is really simple; for example, in English, we use “‘s,” or “his/her&hellip;” to indicate possession.
+<ul>
+<li>Terra <strong>agricolae.</strong> (Land of the farmer / The farmer’s land.) The word <strong>“agricolae”</strong> here is under the conjugation of genitive, which means <strong>“farmer’s.”</strong></li>
+</ul>
+</li>
+<li>Dative: Dative is the case for <strong>indirect subject.</strong>
+<ul>
+<li>Puella cara est <strong>mihi.</strong> (The girl is dear to me.) The word “mihi” here is indirect object.</li>
+</ul>
+</li>
+<li>Accusative: Accusative is the case for <strong>direct object</strong>.
+<ul>
+<li>Ego manduco <strong>carnem.</strong> (I eat meat.) The word “carnem” here is direct object.</li>
+<li>Ad <strong>Roman</strong> eo. (I go to Rome.) The word <strong>“Roman”</strong> here is direct object, while <strong>“Ad”</strong> means <strong>“to,”</strong> and <strong>“eo”</strong> means <strong>“(I) go.”</strong></li>
+<li>In <strong>casam</strong> ambulo. (I stroll inside the house.) The word <strong>“casam”</strong> here is direct object. while <strong>“In”</strong> means <strong>“in,”</strong> and <strong>“ambulo”</strong> means <strong>“stroll.”</strong></li>
+</ul>
+</li>
+<li>Vocative: vocative is the case to be put into use when <strong>someone is calling the other person</strong>.
+<ul>
+<li>Ave <strong>Caesar</strong>! (Hi, Caesar!)</li>
+</ul>
+</li>
+<li>Ablative: <strong>This is the most difficult case in Latin.</strong> It’s used to express meanings that other cases can’t express. It’s often use with <strong>prepositions (preposition + noun).</strong>
+<ul>
+<li><strong>de (about)</strong>: <strong>De re publica</strong> loquimar. (We talk about politics.)</li>
+<li><strong>cum (with)</strong>: <strong>Cum amico</strong> loquor. (I’m talking with a friend.)</li>
+<li><strong>in (in)</strong>: Cicero <strong>in foro</strong> stabat. (Cicero was in the forum.)</li>
+<li><strong>e/ex (leave from)</strong>: <strong>Ex Roma</strong> exeo. (I leave from Rome.)</li>
+<li><strong>a/ab (from)</strong>: <strong>Ab urbe</strong> condita. (From the foundation of Rome.)</li>
+</ul>
+</li>
+</ul>
+<h2 id="21declensions">2.1	Declensions</h2>
+<h3 id="211first-declension">2.1.1	First Declension</h3>
+<p>Words with first declension often end with <strong>-a</strong> and most of them are <strong>feminine</strong>. For example, rosa(rose).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Singular</th>
+<th>Plural</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nominative</td>
+<td>Ros-a</td>
+<td>Ros-ae</td>
+</tr>
+<tr>
+<td>Genitive</td>
+<td>Ros-ae</td>
+<td>Ros-arum</td>
+</tr>
+<tr>
+<td>Dative</td>
+<td>Ros-ae</td>
+<td>Ros-is</td>
+</tr>
+<tr>
+<td>Accusative</td>
+<td>Ros-am</td>
+<td>Ros-as</td>
+</tr>
+<tr>
+<td>Vocative</td>
+<td>Ros-a</td>
+<td>Ros-ae</td>
+</tr>
+<tr>
+<td>Ablative</td>
+<td>Ros-a</td>
+<td>Ros-is</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Exercise 2.1.1.1</em></p>
+<pre tabindex="0"><code>Italia est magna paeninsula, terra fecunda. Paeninsula abundat pomis. Italia agricolarum et nautarum patria est. Aurae semper benignae sunt et aqua limpida est. Non sunt leaenae et pantherae. Feminae formosae sunt.
+
+Word by word analysis: Italy is big peninsula, land fertile (n+adj.). Peninsula abound fruits (abundat + abl., so pomis is plural+abl. form of &#34;pomum,&#34; &#34;fruits&#34;) Italy of farmers (agricola -&gt; pl.+gen. -&gt; agricolarum | 1st declension) and of sailors nation is. (Italy is a nation of farmers and sailors.) Winds (1st. declension, pl.) always kind (benignae also follows the declension with aurae) are and water clear(limpida, orginally limpidus, but aqua is feminine noun, so limpidus follow the declension of aqua, and became limpida) is. No are (Non sunt = There are no) lionesses and panthers (leaena et panthera turned into nominative pl. form). Women beautiful are.
+</code></pre><p><em>Exercise 2.1.1.2</em></p>
+<pre tabindex="0"><code>Agricolae terram arant, glebas irrigant, aristas excitant, plantas currant, in silvis feras captant.
+
+Farmers land (terra-&gt;terr-am | accusative sing.), soils (gleba-&gt;gleb-as | acc. pl.) irrigate, crops raise, sprouts take care, in forest (silva-&gt;silvis | abl. pl., since when we use in+location without any motion, we use ablative.) feras captant.
+</code></pre><p><em>Exercise 2.1.1.3</em></p>
+<pre tabindex="0"><code>Fortuna apud antiquos dea erat, dea magna et valida. Summa cum inconstantia divitas et inopiam
+</code></pre><p>&hellip;WIP</p>
+
+  </div>
+
+  <div id=links>
+    
+    
+      <a href="https://kaseeia-hsu.github.io/post/latin0/">Grammatica Latina 0.0&nbsp;&raquo;</a>
+    
+  </div>
+</section>
+
+  
+</body>
+</html>
+
+
+

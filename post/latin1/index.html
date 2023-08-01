@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="">
+
+    
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap" rel="stylesheet" media="print" type="text/css" onload="this.media='all'">
+    
+
+    <title>
+      
+      
+         Grammatica Latina 0.1 
+      
+    </title>
+    <link rel="canonical" href="https://kaseeia-hsu.github.io/post/latin1/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify { float: left; }
+  .right-justify { float:right; }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:bolder;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:left;
+    padding:80px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:30px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, .date {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content .date {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(1) {
+    margin-right:0.5em;;
+  }
+
+  #links :nth-child(2) {
+    margin-left:0.5em;;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    *, #nav h1 a {
+      color: #FDFDFD;
+    }
+
+    body {
+      background: #121212;
+    }
+
+    pre, code {
+      background-color: #262626;
+    }
+
+    #sub-header, .date {
+      color: #BABABA;
+    }
+
+    hr {
+      background: #EBEBEB;
+    }
+  }
+</style>
+
+
+    </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="https://kaseeia-hsu.github.io/">Kaseeia&#39;s Blog</a></h1>
+      <ul>
+        
+          <li><a href="https://mail.google.com/mail/u/0/?source=mailto&amp;to=kaseeia_hsu@ieee.org&amp;fs=1&amp;tf=cm">Contact</a></li>
+        
+          <li><a href="https://github.com/Kaseeia-Hsu/Kaseeia-Hsu.github.io">Github</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1> Grammatica Latina 0.1 </h1>
+
+  
+    <div id=sub-header>
+      August 2023 · 3 minute read
+    </div>
+  
+
+  <div class="entry-content">
+    <h2 id="10word-class-in-latin">1.0	Word Class in Latin</h2>
+<p>There are <strong>8</strong> classes of word in Latin: <strong>“noun, pronoun, verb, adverb, adjective, conjunction, interjection, and preposition.”</strong> There’s <strong>NO ARTICLE</strong> (such as, “the” or “a/an” in English) in Latin.</p>
+<ul>
+<li>Noun, such as <strong>Caesar(Emperor), Domus(house), and Canis(dog).</strong></li>
+<li>Pronoun, such as:
+<ul>
+<li><strong>Meus(Mine): Tabula est mea. (The tablet is mine)</strong></li>
+<li><strong>Ille(That): Ille vir. (That man)</strong></li>
+<li><strong>Qui(Who): Qui fecit hoc? (Who did this?)</strong></li>
+</ul>
+</li>
+<li>Adjective, such as:
+<ul>
+<li><strong>Altus(Tall): Altus homo. (Tall man)</strong></li>
+<li><strong>Albus(White): Alba domus. (White house | PS Not the one in the U.S.)</strong></li>
+</ul>
+</li>
+<li>Verb, such as <strong>Manducare(to eat), Dormire(to sleep), and Loqui(to talk).</strong></li>
+<li>Adverb, such as:
+<ul>
+<li><strong>Breviter(briefly): Breviter loqui. (to talk breifly)</strong></li>
+<li><strong>Multam(alot): Multam manducare. (to eat a lot)</strong></li>
+</ul>
+</li>
+<li>Conjunction, such as <strong>et(and), sed(but), and nisi(unless).</strong></li>
+<li>Interjection, such as <strong>heu(phew).</strong></li>
+<li>Preposition, such as:
+<ul>
+<li><strong>In(in, at): In schola sumus. (We are at school)</strong></li>
+<li><strong>Supra(on, over): Domus supra montem. (A house on the mountain)</strong></li>
+<li><strong>Ad(to): Ad scholam eo. (I go to school)</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="11genders">1.1	Genders</h2>
+<p>There are <strong>3 genders for nouns in Latin</strong>: <strong>masculinum, femininum, and neutrum.</strong> There’s no regular rules for us to tell if a noun is masculine, feminine, or neutral. However, after we have gotten more and more familiar with this language, we will still find out some rules for some sets of nouns. For example: nouns end with <strong>-tas</strong> is always <strong>feminine</strong>, like <strong>caritas(charity/love) and majestas(majesty).</strong></p>
+<h2 id="12conjugation">1.2	Conjugation</h2>
+<p>The first conjugation that we will talk about is the one which is determined by different personal pronouns, and you can see all the personal pronouns here in Latin in the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Personal pronoun</th>
+<th>Singular</th>
+<th>Plural</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First person</td>
+<td>Ego(I)</td>
+<td>Nos(we)</td>
+</tr>
+<tr>
+<td>Second person</td>
+<td>Tu(you)</td>
+<td>Vos(you)</td>
+</tr>
+<tr>
+<td>Third person</td>
+<td>ille (he) / illa (she) /illud (it)</td>
+<td>Illi / Illae / Illa</td>
+</tr>
+</tbody>
+</table>
+<p>You may notice that, the third-person part contains 3 different pronouns, and when they come to be plural, we use <strong>Illi(they)</strong> to refer to things that contain __1. only masculine nouns, or 2. a set of nouns with more than one gender (e.g. Leo (lion/m.) et praedam (prey/f.) = Illi)  __. We use <strong>Illae when the nouns that we refer to are all feminine, and the same rule also fits illa.</strong></p>
+<h3 id="121active-voice--passive-voice">1.2.1	Active Voice &amp; Passive Voice</h3>
+<ul>
+<li>Active voice: Ego manduco carnem. (I eat meat)</li>
+<li>Passive voice:  Caro manducata est a me. (The meat was eaten by me)</li>
+</ul>
+<p>“Caro” in the second sentence means “meat” in <strong>Nominative (when the noun is a subject)</strong>, while “carnem” also means “meat,” but under <strong>“Accusative”</strong> , which means that this noun serves as a <strong>direct object</strong>. So you will also see how different cases influence the conjugation of all the words in Latin. <strong>AND PLEASE DO NOTICE THAT, conjugation of nouns and verb is the most important part, and the most challenging part for you to learn, so please make sure to pay extra attention when you encounter a new word, and try to memorize it by heart!</strong></p>
+
+  </div>
+
+  <div id=links>
+    
+      <a href="https://kaseeia-hsu.github.io/post/latin0/">&laquo;&nbsp;Grammatica Latina 0.0</a>
+    
+    
+  </div>
+</section>
+
+  
+</body>
+</html>
+
+
+
