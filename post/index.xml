@@ -7,25 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kaseeia-hsu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-
-    <item>
-      <title>Grammatica Latina 0.2</title>
-      <link>https://kaseeia-hsu.github.io/post/latin2/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kaseeia-hsu.github.io/post/latin2/</guid>
-      <description> </description>
-    </item>
-
-    <item>
-      <title>Grammatica Latina 0.1</title>
-      <link>https://kaseeia-hsu.github.io/post/latin1/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kaseeia-hsu.github.io/post/latin1/</guid>
-      <description> </description>
-    </item>
-
     <item>
       <title>Grammatica Latina 0.0</title>
       <link>https://kaseeia-hsu.github.io/post/latin0/</link>
@@ -34,5 +15,6 @@
       <guid>https://kaseeia-hsu.github.io/post/latin0/</guid>
       <description>0.1	Purposes of Learning Latin Language Although it&amp;rsquo;s an undeniable truth that Latin language itself has now become an heritage of time, men will still say the influence and the importance of Latin are inmeasureable. Latin served not only as the official language of Roman Empire, but also the official language of most of the nations in the Medieval era. Along with the language itself, many great works written in Latin also left for us to read, and to research; for example, Seneca&amp;rsquo;s Naturales Questions, Iulius Caeser&amp;rsquo;s Bellum Gallicum, or even the Bible.</description>
     </item>
+    
   </channel>
 </rss>
