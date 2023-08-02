@@ -123,6 +123,7 @@
 
   strong {
     font-weight:bolder;
+    color:rgb(141, 8, 39)
   }
 
   q:before {
@@ -137,32 +138,46 @@
     text-decoration:line-through;
   }
 
-  blockquote {
-    font-family:"Old Standard TT",serif;
-    text-align:left;
-    padding:80px;
-  }
+blockquote{
+  font-size: 1.2em;
+  width:95%;
+  margin:50px auto;
+  font-family:"Old Standard TT",serif;
+  font-style:italic;
+  color: #555555;
+  padding:1em 25px 1em 70px;
+  border-left:8px solid rgb(141, 8, 39) ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
 
-  blockquote p {
-    display:inline-block;
-    font-style:italic;
-  }
+blockquote::before{
+  font-family:"Old Standard TT",serif;
+  content: "\201C";
+  color:rgb(141, 8, 39);
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
 
-  blockquote:before,blockquote:after {
-    font-family:"Old Standard TT",serif;
-    content:'\201C';
-    font-size:30px;
-    color:#403c3b;
-  }
+blockquote::after{
+  content: '';
+}
 
-  blockquote:after {
-    content:'\201D';
-  }
+blockquote span{
+  display:block;
+  color:rgb(141, 8, 39);
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
 
   hr {
-    width:40%;
+    width:95%;
     height: 1px;
-    background:#403c3b;
+    background:#bababa;
     margin: 25px auto;
   }
 
@@ -211,14 +226,14 @@
   }
 
   ul li {
-    margin-left: 5px;
+    margin-left: 20px;
   }
 
   ul li {
     list-style-type: none;
   }
   ul li:before {
-    content:"\00BB \0020";
+    content:"\00B7 \0020";
   }
 
   #nav ul li:before, .posts_listing li:before {
@@ -267,6 +282,40 @@
 
   .posts_listing li a:hover,#nav a:hover {
     text-decoration: underline;
+  }
+
+  table {
+    text-align: left;
+    position: relative;
+    border-collapse: collapse; 
+    background-color: #f6f6f6;
+  } 
+
+  td, th {
+    border: 1px solid #999;
+    padding: 20px;
+  }
+
+  th {
+    background: rgb(58, 56, 56);
+    color: white;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+  }
+
+  .primary{
+    background-color: #000000
+  }
+
+  tfoot > tr  {
+    background: black;
+    color: white;
+  }
+
+  tbody > tr:hover {
+    background-color: #ffc107;
   }
 
   #nav {
