@@ -6,7 +6,16 @@
     <description>Recent content on Kaseeias site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kaseeia-hsu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kaseeia-hsu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La Lingua Italiana 0.1</title>
+      <link>https://kaseeia-hsu.github.io/post/ita0/</link>
+      <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kaseeia-hsu.github.io/post/ita0/</guid>
+      <description>Test test</description>
+    </item>
+    
     <item>
       <title>Grammatica Latina 0.2</title>
       <link>https://kaseeia-hsu.github.io/post/latin2/</link>
