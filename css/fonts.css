@@ -1,6 +1,7 @@
 @import url('https://rsms.me/inter/inter.css');
 html { font-family:
-        'Inter',
+        'Arial',
+        'SimSun',
         sans-serif,
         'Apple Color Emoji',
         'Segoe UI Emoji',
@@ -8,7 +9,8 @@ html { font-family:
       }
 @supports (font-variation-settings: normal) {
   html { font-family:
-          'Inter var',
+          'Arial',
+          'SimSun',
           sans-serif,
           'Apple Color Emoji',
           'Segoe UI Emoji',
@@ -23,6 +25,7 @@ code {
     "Segoe UI",
     Helvetica,
     Arial,
+    'SimSun',
     sans-serif,
     "Apple Color Emoji",
     "Segoe UI Emoji",
