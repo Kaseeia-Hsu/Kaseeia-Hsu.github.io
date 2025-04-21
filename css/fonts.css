@@ -1,4 +1,9 @@
 @import url('https://rsms.me/inter/inter.css');
+@font-face {
+    font-family: SimSun;
+    src: url(fonts/SimSun.ttf) format("opentype");
+    unicode-range: U+4E00-9FFF, U+3000–303F;
+}
   html { font-family:
         'Inter',
         sans-serif,
