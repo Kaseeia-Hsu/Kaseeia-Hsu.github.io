@@ -1,38 +1,18 @@
 @import url('https://rsms.me/inter/inter.css');
-
-
-  html { @font-face {
-      font-family:
-            'Inter var',
-            sans-serif,
-            'Apple Color Emoji',
-            'Segoe UI Emoji',
-            'Segoe UI Symbol';
-      unicode-range: U+000-5FF; /* Latin glyphs */
-    }
-
-
-    @font-face {
-      font-family: "SimSun";
-      unicode-range: U+3000–303F, U+4E00-9FFF; /* Chinese glyphs */
-    }
+  html { font-family:
+        'Inter',
+        sans-serif,
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol';
       }
 @supports (font-variation-settings: normal) {
-  html { @font-face {
-    font-family:
+  html { font-family:
           'Inter var',
           sans-serif,
           'Apple Color Emoji',
           'Segoe UI Emoji',
           'Segoe UI Symbol';
-    unicode-range: U+000-5FF; /* Latin glyphs */
-  }
-
-
-  @font-face {
-    font-family: "SimSun";
-    unicode-range: U+3000–303F, U+4E00-9FFF; /* Chinese glyphs */
-  }
         }
 }
 
