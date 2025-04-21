@@ -16,11 +16,6 @@ html { font-family:
         }
 }
 
-.cn {
-    & > *   {
-        font-family:'SimSun'
-    }
-}
 code {
   font-family:
     -apple-system,
