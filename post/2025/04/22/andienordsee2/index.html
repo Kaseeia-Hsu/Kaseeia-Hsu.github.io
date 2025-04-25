@@ -113,28 +113,37 @@
       
       
       <script>
-      (function() {
-        function center_el(tagName) {
-          var tags = document.getElementsByTagName(tagName), i, tag;
-          for (i = 0; i < tags.length; i++) {
-            tag = tags[i];
-            var parent = tag.parentElement;
+        (function() {
+          function isImageOrLinkWithImage(node) {
+            return (
+              node.nodeType === Node.ELEMENT_NODE &&
+              (
+                node.nodeName === 'IMG' ||
+                (node.nodeName === 'A' && node.firstElementChild?.nodeName === 'IMG')
+              )
+            );
+          }
+
+          var paragraphs = document.getElementsByTagName('p');
+          for (var i = 0; i < paragraphs.length; i++) {
+            var p = paragraphs[i];
+            var valid = true;
+
             
-            if (parent.childNodes.length === 1) {
-              
-              if (parent.nodeName === 'A') {
-                parent = parent.parentElement;
-                if (parent.childNodes.length != 1) continue;
+            for (var j = 0; j < p.childNodes.length; j++) {
+              var node = p.childNodes[j];
+              if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() === '') continue;
+              if (!isImageOrLinkWithImage(node)) {
+                valid = false;
+                break;
               }
-              if (parent.nodeName === 'P') parent.style.textAlign = 'center';
+            }
+
+            if (valid) {
+              p.style.textAlign = 'center';
             }
           }
-        }
-        var tagNames = ['img', 'embed', 'object'];
-        for (var i = 0; i < tagNames.length; i++) {
-          center_el(tagNames[i]);
-        }
-      })();
+        })();
       </script>
 
       
