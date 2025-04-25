@@ -1,12 +1,12 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #2e2e33;
-        color: #dadadb;
+        background-color: #393E41;
+        color: white;
     }
 
     blockquote {
-      background: #2e2e33;
+      background: #393E41;
     }
 
     a {
@@ -14,14 +14,14 @@
     }
 
     header {
-      background: #2e2e33;
+      background: #393E41;
       border-bottom: 2px dotted #EBC3DB;
 
     }
 
     .article-meta, .menu a {
-      background: #2e2e33;
-      color: #dadadb;
+      background: #393E41;
+      color: white;
     }
 
     table {
@@ -39,20 +39,20 @@
 /* Light mode */
 @media (prefers-color-scheme: light) {
     blockquote {
-      background: #f3fbfb;
+      background: #f9f9f9;
     }
 
     a {
-      color: #f3fbfb;
+      color: #613DC1;
     }
 
     header {
-      background: #f3fbfb;
+      background: #613DC1;
     }
 
     .article-meta, .menu a {
-      background: #f3fbfb;
-      color: #1e6550;
+      background: #E8DBC5;
+      color: #000;
     }
 
     table {
