@@ -1,5 +1,7 @@
+@import url("https://use.typekit.net/xuf2iol.css");
 @import url('https://rsms.me/inter/inter.css');
 html { font-family:
+        ar-shulinsonggbstd, serif,
         'SimSun',
         sans-serif,
         'Apple Color Emoji',
@@ -8,6 +10,7 @@ html { font-family:
       }
 @supports (font-variation-settings: normal) {
   html { font-family:
+          ar-shulinsonggbstd, serif,
           'SimSun',
           sans-serif,
           'Apple Color Emoji',
