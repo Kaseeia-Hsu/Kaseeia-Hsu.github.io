@@ -1,12 +1,12 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: ##1d1e20;
-        color: #dadadb;
+        background-color: #393E41;
+        color: white;
     }
 
     blockquote {
-      background: ##1d1e20;
+      background: #393E41;
     }
 
     a {
@@ -14,13 +14,13 @@
     }
 
     header {
-      background: #1d1e20;
+      background: #393E41;
       border-bottom: 2px dotted #EBC3DB;
 
     }
 
     .article-meta, .menu a {
-      background: #1d1e20;
+      background: #393E41;
       color: white;
     }
 
