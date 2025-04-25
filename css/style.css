@@ -1,12 +1,12 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #393E41;
-        color: white;
+        background-color: ##1d1e20;
+        color: #dadadb;
     }
 
     blockquote {
-      background: #393E41;
+      background: ##1d1e20;
     }
 
     a {
@@ -14,13 +14,13 @@
     }
 
     header {
-      background: #393E41;
+      background: #1d1e20;
       border-bottom: 2px dotted #EBC3DB;
 
     }
 
     .article-meta, .menu a {
-      background: #393E41;
+      background: #1d1e20;
       color: white;
     }
 
@@ -37,7 +37,7 @@
 
 
 /* Light mode */
-@media (prefers-color-scheme: light) {
+/*@media (prefers-color-scheme: light) {
     blockquote {
       background: #f9f9f9;
     }
@@ -64,7 +64,7 @@
     th, td { padding: 5px; }
     tr:nth-child(even) { background: #eee }
 
-}
+}*/
 
 
 body {
