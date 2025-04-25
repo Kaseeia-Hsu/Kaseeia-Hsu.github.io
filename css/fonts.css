@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap');
 @import url('https://rsms.me/inter/inter.css');
 html { font-family:
+        "Cactus Classical Serif",
         'SimSun',
         sans-serif,
         'Apple Color Emoji',
@@ -8,6 +10,7 @@ html { font-family:
       }
 @supports (font-variation-settings: normal) {
   html { font-family:
+          "Cactus Classical Serif",
           'SimSun',
           sans-serif,
           'Apple Color Emoji',
