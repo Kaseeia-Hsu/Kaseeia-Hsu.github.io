@@ -33,6 +33,15 @@
     th, td { padding: 5px; }
     tr:nth-child(even) { background: #666 }
 
+    header a {
+      color: #fff;
+      line-height: 1.75rem;
+      padding: 0 0.5rem
+    }
+    header a:hover,
+    header .current a {
+      color: #fff
+    }
 }
 
 
@@ -63,7 +72,15 @@
     table thead th { border-bottom: 1px solid #ddd; }
     th, td { padding: 5px; }
     tr:nth-child(even) { background: #eee }
-
+    header a {
+      color: #1e6550;
+      line-height: 1.75rem;
+      padding: 0 0.5rem
+    }
+    header a:hover,
+    header .current a {
+      color: #1e6550
+    }
 }
 
 
@@ -140,16 +157,6 @@ header ol {
 }
 header nav {
     padding: 0 0.5rem
-}
-
-header a {
-    color: #fff;
-    line-height: 1.75rem;
-    padding: 0 0.5rem
-}
-header a:hover,
-header .current a {
-    color: #fff
 }
 
 /* Code Boxes */
