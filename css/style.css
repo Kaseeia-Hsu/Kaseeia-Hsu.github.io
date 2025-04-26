@@ -34,21 +34,26 @@
     tr:nth-child(even) { background: #666 }
 
     header a {
-      color: #fff;
+      color: #dadadb;
       line-height: 1.75rem;
       padding: 0 0.5rem
     }
     header a:hover,
     header .current a {
-      color: #fff
+      color: #dadadb
     }
 }
 
 
 /* Light mode */
 @media (prefers-color-scheme: light) {
+    body {
+      background-color: #f7fafc;
+      color: #4a5568;
+    }
     blockquote {
-      background: #f3fbfb;
+      background: #f7fafc;
+      color: #4a5568
     }
 
     a {
@@ -72,6 +77,7 @@
     table thead th { border-bottom: 1px solid #ddd; }
     th, td { padding: 5px; }
     tr:nth-child(even) { background: #eee }
+
     header a {
       color: #1e6550;
       line-height: 1.75rem;
