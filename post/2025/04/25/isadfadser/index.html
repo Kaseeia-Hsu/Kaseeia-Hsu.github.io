@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <link rel="shortcut icon" type="image/x-icon" href="/images/apple.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -10,10 +10,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="我们生活的日常，又何尝不是美的集大成者。">
-    <title>Posts | Leto&#39;s Blog</title>
+    <title>test pyrl | Leto&#39;s Blog</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="https://kaseeia-hsu.github.io/css/fonts.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/fonts.css">
 
     <link rel="stylesheet" href="/plyr.css" />
     
@@ -26,7 +26,7 @@
           
           
           <li class="pull-left ">
-            <a href="https://kaseeia-hsu.github.io/">~/leto&#39;s blog</a>
+            <a href="http://localhost:1313/">~/leto&#39;s blog</a>
           </li>
           
           
@@ -57,45 +57,60 @@
     </header>
 
 
+<div class="article-meta">
+<h1><span class="title">test pyrl</span></h1>
+<h2 class="author">Leto</h2>
+<h2 class="date">2025/04/25</h2>
+<p class="terms">
+  
+  
+  Categories: <a href="/categories/music">Music</a> 
+  
+  
+  
+  Tags: <a href="/tags/music">Music</a> 
+  
+  
+</p>
+</div>
+
+
 
 <div class="content-wrapper">
-
-  <h1>Posts</h1>
-  
-
-  
-
-  <ul>
-     
-     
-     
-     <li>
-       <span class="date">2025/04/25</span>
-       <a href="/post/2025/04/25/isanandkhmer/">聊聊东南亚传统音乐风格——莫兰与柬埔寨音乐</a>
-     </li>
-     
-     <li>
-       <span class="date">2025/04/23</span>
-       <a href="/post/2025/04/23/andienordsee2/">极北之行（二）芬兰其一</a>
-     </li>
-     
-     <li>
-       <span class="date">2025/04/22</span>
-       <a href="/post/2025/04/22/andienordsee/">极北之行（一）爱沙尼亚篇</a>
-     </li>
-     
-     <li>
-       <span class="date">2025/04/21</span>
-       <a href="/post/2025/04/21/exhibkrasnucha/">Exhibition - KRASNUCHA</a>
-     </li>
-     
-     <li>
-       <span class="date">2025/04/21</span>
-       <a href="/post/2025/04/21/summerinvilnius/">夏天</a>
-     </li>
-     
-   </ul>
+  <main>
+    <div class="plyr__video-embed" id="player">
+  <iframe
+    src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+    allowfullscreen
+    allowtransparency
+    allow="autoplay"
+    width: 200%
+  ></iframe>
 </div>
+<div class="plyr__video-embed" id="player">
+  <iframe
+    src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+    allowfullscreen
+    allowtransparency
+    allow="autoplay"
+    style="width: 100%; height: 500px; border: none;"  <!-- 设置宽度和高度 -->
+  ></iframe>
+</div>
+<div class="container">
+	<div id="player" data-plyr-provider="youtube" data-plyr-embed-id="bTqVqk7FSmY"></div>
+</div>
+
+    <a href="/"> >> Home</a>
+  </main>
+</div>
+
+
+<script src="/plyr.js"></script>
+<script>
+  const player = new Plyr('#player');
+</script>
+
+
     <footer>
       
       

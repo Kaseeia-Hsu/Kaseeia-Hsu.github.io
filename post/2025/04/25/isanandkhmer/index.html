@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="https://kaseeia-hsu.github.io/css/fonts.css">
+
+    <link rel="stylesheet" href="/plyr.css" />
     
   </head>
 
@@ -30,6 +32,11 @@
           
           <li class="pull-left ">
             <a href="/categories/">~/categories</a>
+          </li>
+          
+          
+          <li class="pull-left ">
+            <a href="/radio/">~/radio</a>
           </li>
           
           
@@ -74,9 +81,25 @@
     <h2 id="契机">契机</h2>
 <img src="\images\isancover.png" hspace="30" vspace="30">
 <p>今天听泰国传统莫兰音乐时（又称依善音乐，因其发源自泰国东北依善地区得名）听到了这首 &ldquo;ลำเพลินมีเมียแล้วไป（快乐的男人早就有老婆啦）&rdquo; 并发觉它和我很喜欢的一首柬埔寨音乐——&ldquo;ម៉ាពីនក មកពីណា（君自何来？）&rdquo; 有着极为相似的旋律与调性，但风格却又大相径庭。遂起心动念：“嗯，要是能把东南亚历史，艺术与文化发展做分析比较的话，肯定很好玩吧！“</p>
-<iframe src="https://www.youtube.com/embed/4xYLQKDg5Zs?si=XrRuCMVZtVTZzHY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="plyr__video-embed" id="player">
+  <iframe
+    src="https://www.youtube.com/embed/4xYLQKDg5Zs?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+    allowfullscreen
+    allowtransparency
+    allow="autoplay"
+    style="width: 100%; height: 500px; border: none;"  <!-- 设置宽度和高度 -->
+  ></iframe>
+</div>
 <center> ลำเพลินมีเมียแล้วไป </center>
-<iframe src="https://www.youtube.com/embed/FCKtN9vkO8I?si=bNb3HMl4gPAOE22p" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="plyr__video-embed" id="player">
+  <iframe
+    src="https://www.youtube.com/embed/FCKtN9vkO8I?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+    allowfullscreen
+    allowtransparency
+    allow="autoplay"
+    style="width: 100%; height: 500px; border: none;"  <!-- 设置宽度和高度 -->
+  ></iframe>
+</div>
 <center> ម៉ាពីនក មកពីណា </center>
 <h2 id="历史">历史</h2>
 <p>而两者音乐风格之所以相仿，其实也跟伊善地区的民族复杂性有关：伊善（อีสาน）是泰国种族与文化最多元的地区，同时也是最贫困的地区。在古代，这里先是被吴哥时期的高棉帝国所征服（如下左图），后在十五世纪中期被泰族人建立的素可泰王国与阿瑜陀耶王国攻打，再被北边的澜沧（今老挝）人占领，并最终失去吴哥城，迁都金边。这也代表着高棉帝国的彻底衰败，并随之进入了所谓的柬埔寨黑暗时期。</p>
@@ -89,15 +112,31 @@
 <p>重要的是，是什么导致高棉帝国的快速衰败（几乎是在两代人以内的事情）一直以来都没有百分之百确凿的证据与史料；最有可能的论证是：在十二三世纪初，吴哥城是当时世界上最大的人口定居点，而这七十五万人口带来的大量开发对于周遭的生态，是无法在短期内复原的伤害；这也和我们讨论到的伊善音乐特色有相关——当时吴哥城北方便是伊善，和泰族国家内部得天独厚的土地生态不同，泰国人会说泰国 “ในน้ำมีปลา ในนามีข้าว（水里有鱼，田里有米）” 所以无需特别努力就能有所收获，和埃及人一样，他们有着因水文和环境塑造出的一种乐观的，闲适的态度。可伊善这片后被占领的土地，不论在高棉时期抑或是上个世纪的泰国，都被认为是边境中的边境，乡下中的乡下，只因呵叻高原的土质干燥，加上雨季不长，因此此地长期受干旱与收成不佳困扰，这也导致了当地民歌——也就是莫兰（หมอลำ）音乐——成为了平民在困苦之地所仰赖的艺术；最初，莫兰音乐是一种宣传佛教教义与说书的歌曲，到了后期，人们将它节日化，生活化，而歌曲内容多表述了一种在困顿与哀愁中的乐天知命，其内容可以是离开故土寻找工作的故事；农村的男孩没有女孩看的上的故事（如<a href="https://youtu.be/fn1PVDDo2lE?si=yGvF30J3ITHse4-0"><strong>กันตรึมสกา</strong></a>讲述 “农村小伙没人看得上，外国的洋女婿丈母娘可喜欢了”）；或是单纯且欢快的派对歌曲，有种今朝有酒今朝醉的氛围。</p>
 <p>莫兰（หมอลำ）音乐的重要性也可以从其泰语名称中得知：หมอ 代表的实际上是医生，而 ลำ 是吟唱的意思，不同于当代泰语中的歌手 นักร้อง——นัก 指某者、某人，而 ร้อง 则是唱歌、或哭泣、叫唤。</p>
 <p>从音乐中，也能看出柬埔寨与高棉文化在当地的交融是和谐，而非对立的存在，如下方这首 “รักบ่าวอีสานใต้（我爱上南伊善的男孩）” 便是很典型，并且相当知名的一首曲子：</p>
-<iframe src="https://www.youtube.com/embed/nTnPp8h5cnU?si=DAK7Tpj1Wj9_gJR6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="plyr__video-embed" id="player">
+  <iframe
+    src="https://www.youtube.com/embed/nTnPp8h5cnU?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+    allowfullscreen
+    allowtransparency
+    allow="autoplay"
+    style="width: 100%; height: 500px; border: none;"  <!-- 设置宽度和高度 -->
+  ></iframe>
+</div>
 <p>内容大致说了：</p>
-<p><em>แต่เว้าภาษานำอ้ายบ่เป็น  /  但我不会说你们的语言<br>
-แต่เว้าขะแมร์นำอ้ายบ่เป็น  /  我不会用高棉语和你交流<br>
+<p><em>แต่เว้าภาษานำอ้ายบ่เป็น  /  但我不会说你们的语言
+แต่เว้าขะแมร์นำอ้ายบ่เป็น  /  我不会用高棉语和你交流
 อยากให้สอนร้องเล่นเพลงกันตรึม  /  多想要你教我唱Kantrum啊</em></p>
 <hr>
 <p>另一方面，柬埔寨本土又有着独树一帜的音乐特色。</p>
 <p>从高棉帝国时期开始，直到十四世纪，也就是衰落的前一百年，高棉都还处于文化与艺术的盛世。在阇耶跋摩七世的时代，他把音乐艺术作为王权表现与宗教感召的工具，因此，柬埔寨音乐优雅，缓慢，及清新的调性也就由此定调，直到二十世纪初都是如此——这种 “皇家音乐” 便是柬埔寨歌曲的内核，且不同于伊善音乐的快节奏与庆祝感。如同下面这首 “រំដួលដងស្ទឹងសង្កែ（马德望的鸡蛋花）”，由 Sinn Sisamouth 所作，他被称为柬埔寨的猫王，作曲据闻超过千首；在西哈努克国王掌权的1950~60年代初期，柬埔寨的艺术迎来了第二次的黄金时代，其中诞生的就有他，还有著名歌手如 Eung Nary, Pen Ran, Ros Serey Sothea 等人，他们在殖民过后的资本主义社会，很快便学到了西方摇滚与爵士的精髓，并将其与古典且优雅的柬埔寨风格相交合，创作出了新一代的柬埔寨音乐，这种热带风格搭配上现代音乐听起来相当有原始、异国感，故许多人称其摇滚或爵士为 “迷幻爵士” 或 “迷幻摇滚。”（可惜好景不长，上述提到的这些人将在我所述的下个十年内——也就是红色高棉夺位后，进行大屠杀的年代——全部死亡，或是失踪。也是直至2010左右，这些过去丢失的音乐才再一次被西方游客所找到并重视。）</p>
-<iframe src="https://www.youtube.com/embed/PdLFt6QvwEQ?si=pXO9jf5X4qr5J7JA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="plyr__video-embed" id="player">
+  <iframe
+    src="https://www.youtube.com/embed/PdLFt6QvwEQ?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+    allowfullscreen
+    allowtransparency
+    allow="autoplay"
+    style="width: 100%; height: 500px; border: none;"  <!-- 设置宽度和高度 -->
+  ></iframe>
+</div>
 <h2 id="乐理">乐理</h2>
 <p>在乐理上来说，这两者音乐的相似性第一是体现在特色乐器 <a href="https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%84%E0%B8%99">แคน （竹笛）</a>上，而后还有泰国的 <a href="https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B4%E0%B8%93_(%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B5%E0%B8%AA%E0%B8%B2%E0%B8%99)">พิณ （伊善琵琶）</a>与 <a href="https://en.wikipedia.org/wiki/Tro_Khmer">ទ្រខ្មែរ （Tro / 这个词真的没有中文译法，至少我翻译不出来，但它是类似二胡的乐器）</a> 和<a href="%E1%9E%85%E1%9E%B6%E1%9E%94%E1%9F%89%E1%9E%B8%E1%9E%8A%E1%9E%84%E1%9E%9C%E1%9F%82%E1%9E%84">ចាប៉ីដងវែង（长颈琴）</a>。值得注意的是，造成上述这种曲风快慢、有没有节庆与欢乐感的差别就在于伊善琵琶的节奏感非常强，且音色响亮、节拍快；反观柬埔寨的 tro 与长颈琴则多用于缓慢拨弹，以长音和颤音居多，增添了一丝稳重与故事感。另外一点就是，柬埔寨相较于泰国音乐，多了更多的打击乐元素，这也导致他们在发展爵士乐时能够适应的非常快。</p>
 <p>那，为什么即便风格、节奏、情绪都如此不同了，这些音乐听起来仍有相同的调性呢？</p>
@@ -108,6 +147,9 @@
     <a href="/"> >> Home</a>
   </main>
 </div>
+
+
+
     <footer>
       
       
